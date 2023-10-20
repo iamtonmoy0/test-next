@@ -1,8 +1,10 @@
+import Image from "next/image";
+import img1 from '@/assets/go.png'
 
 const AboutPage = () => {
 	return (
 		<div>
-			this is about page
+			<Image src={img1} placeholder="blur" alt=""/>
 		</div>
 	);
 }

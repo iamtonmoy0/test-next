@@ -36,6 +36,7 @@ const HomePage=()=> {
       </div>
     </div>
   </div>
+  
 </section>
   )
 }
