@@ -12,13 +12,13 @@ function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <nav>
+        <nav className="text-center flex justify-between">
           <a>Home</a>
           <a>About</a>
           <a>Contact</a>
         </nav>
         {children}
-        <footer>hello world this is footer</footer>
+        <footer className="text-center">hello world this is footer</footer>
       </body>
     </html>
   );
