@@ -1,11 +1,10 @@
 import React from "react";
 import SlideBar from "./slidebar";
 import Link from "next/link";
+import LoadBlogs from "@/utils/loadBlogs";
+
 const Page = async () => {
-  const res = await fetch("https://jsonplaceholder.typicode.com/posts", {
-    cache: "force-cache",
-  });
-  const data = await res.json();
+  const data =await LoadBlogs();
   return (
     <div className="flex flex-row w-full">
       <div className="w-2/12">
